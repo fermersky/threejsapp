@@ -1,0 +1,16 @@
+{
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build && cp fonts dist -r",
+    "serve": "vite preview",
+    "prod": "npm run build && node server.js"
+  },
+  "devDependencies": {
+    "vite": "^2.3.7"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "three": "^0.129.0"
+  }
+}

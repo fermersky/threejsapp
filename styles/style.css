@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;600;700&display=swap');
+* {
+    cursor: none;
+    overflow: hidden;
+}
+body {
+    font-family: 'Roboto Mono', monospace;
+    text-align: center;
+    background-color: #000;
+    color: rgb(255, 255, 255);
+}
+
+canvas {
+    position: fixed;
+    top: 80px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+}
+
+#flashlight {
+    position: absolute;
+    z-index: 2;
+    /* transform: rotate(130deg); */
+    width: 40px;
+    height: 40px;
+
+    top: -50px;
+    left: -50px;
+}
+
+.on {
+    filter: brightness(130%);
+}
+
+.off {
+    filter: brightness(50%);
+}
